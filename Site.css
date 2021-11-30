@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.topArea {
+  height: 70px;
+}
+.topArea .line1 {
+  padding: 5px 0px 0px 0px;
+  text-align: center;
+}
+.topArea .line1 .games {
+  display: inline-block;
+  line-height: 10px;
+}
+  .topArea .line1 .games div {
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    border: 1px solid black;
+    font-size: 14px;
+    text-align: center;
+    line-height: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
+    margin: 0px 5px 0px 5px;
+  }
+  .topArea .line1 .games div.selected {
+    background-color: #606060;
+    color:white;
+  }
+  .topArea .line1 .levels {
+    display: inline-block;
+    margin-left: 40px;
+    color:white;
+  }
+  .topArea .line1 .levels .level {
+    display: inline-block;
+    width: 20px;
+    height: 30px;
+    border: 1px solid black;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 30px;
+    cursor: pointer;
+    background-color: white;
+    color:black;
+  }
+  .topArea .line1 .levels .selected {
+    background-color: #606060;
+    color: white;
+  }
+  .topArea .line2 {
+    overflow: auto;
+    padding: 0px 10px 0px 10px;
+  }
+  .topArea .line2 .player1 {
+    float: left;
+    color: white;
+  }
+  .topArea .line2 .player1 div {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid white;
+    text-align: center;
+  }
+  .topArea .line2 .player1 .computer {
+    background-color: #606060;
+    color: white;
+  }
+  .topArea .line2 .player2 {
+    float: right;
+    color: white;
+  }
+  .topArea .line2 .player2 div {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid white;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+  }
+    .topArea .line2 .player2 div.selected {
+      background-color: #606060;
+    }
+canvas {
+  simage-rendering: pixelated;
+}
